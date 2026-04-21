@@ -1,0 +1,305 @@
+
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торт Солнечногорск — скидка 15% ВКонтакте</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #edeef0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .vk-wrapper {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .vk-header {
+            background: #5181b8;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .vk-header span {
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 0;
+        }
+        .hero-visual {
+            background: linear-gradient(145deg, #f7f5f0 0%, #fff5e8 100%);
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .badge {
+            background: #e6b17e;
+            color: #2d1c0f;
+            font-weight: 600;
+            font-size: 0.7rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+        .hero-visual h1 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #2c3e50;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+        .hero-visual p {
+            color: #5a6c7e;
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            color: #3a4a5c;
+        }
+        .form-section {
+            padding: 32px 28px;
+            background: #fff;
+        }
+        .form-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .form-subtitle {
+            color: #7f8c8d;
+            margin-bottom: 24px;
+            font-size: 0.85rem;
+            border-left: 3px solid #5181b8;
+            padding-left: 12px;
+        }
+        .input-group {
+            margin-bottom: 16px;
+        }
+        .input-group label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #d0d4d9;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: #fff;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 6px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+        }
+        .cta-button {
+            background: #5181b8;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: 0.2s;
+        }
+        .cta-button:hover {
+            background: #3f6a9c;
+        }
+        .vk-group {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #e1e5e8;
+            text-align: center;
+        }
+        .vk-group a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #5181b8;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .share-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+        }
+        .share-btn {
+            background: #edeef0;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: #2c3e50;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .privacy-note {
+            font-size: 0.65rem;
+            text-align: center;
+            margin-top: 16px;
+            color: #95a5a6;
+        }
+        @media (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="vk-wrapper">
+    <div class="vk-header">
+        <span>📱 ВКонтакте</span>
+        <span style="font-size:0.8rem; opacity:0.8;">| Торт Солнечногорск</span>
+    </div>
+    <div class="grid-container">
+        <div class="hero-visual">
+            <div class="badge">🔥 Акция для подписчиков</div>
+            <h1>Скидка 15% <br>на первый заказ</h1>
+            <p>Торты, капкейки, пирожные — ручная работа, натуральные ингредиенты. Доставка по Солнечногорску.</p>
+            <div class="feature-item"><span>🍰</span> Более 20 рецептов</div>
+            <div class="feature-item"><span>🎁</span> Индивидуальный дизайн</div>
+            <div class="feature-item"><span>🚚</span> Бесплатно от 3000₽</div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-title">Получите промокод</div>
+            <div class="form-subtitle">Оставьте заявку — и мы пришлём скидку 15% в сообщения ВК или на почту</div>
+            
+            <form action="https://formsubmit.co/sladko.ponastoyashemy.sol50@mail.ru" method="POST">
+                <input type="hidden" name="_subject" value="🍰 НОВАЯ ЗАЯВКА ИЗ VK | Торт Солнечногорск">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_autoresponse" value="🍰 Спасибо за заявку! Ваш промокод на скидку 15%: VKSLADKO15
+
+Как активировать:
+1. Напишите нам в сообщения группы: https://vk.ru/tort_solnechnogorsk
+2. Назовите промокод при заказе
+3. Получите скидку 15% на первый заказ!
+
+Ждём вас в нашем сообществе! 🎂">
+                
+                <div class="input-group">
+                    <label>👤 Имя</label>
+                    <input type="text" name="Имя" required>
+                </div>
+                <div class="input-group">
+                    <label>📞 Телефон</label>
+                    <input type="tel" name="Телефон" required>
+                </div>
+                <div class="input-group">
+                    <label>📧 Email</label>
+                    <input type="email" name="Email" required>
+                </div>
+                <div class="input-group">
+                    <label>🍰 Что хотите?</label>
+                    <select name="Интерес">
+                        <option>Торт на заказ</option>
+                        <option>Капкейки / пирожные</option>
+                        <option>Подарочный набор</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>💬 Удобный способ связи</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="Способ связи" value="ВКонтакте" checked> ВКонтакте</label>
+                        <label class="radio-option"><input type="radio" name="Способ связи" value="WhatsApp"> WhatsApp</label>
+                        <label class="radio-option"><input type="radio" name="Способ связи" value="Telegram"> Telegram</label>
+                    </div>
+                </div>
+                <button type="submit" class="cta-button">🔥 Получить скидку 15%</button>
+            </form>
+            
+            <!-- Блок ВКонтакте с вашей группой -->
+            <div class="vk-group">
+                <a href="https://vk.ru/tort_solnechnogorsk" target="_blank">
+                    📱 Подписаться на сообщество ВКонтакте
+                </a>
+                <div class="share-buttons">
+                    <a href="#" target="_blank" class="share-btn" id="shareBtn">📢 Рассказать друзьям</a>
+                    <a href="https://vk.ru/tort_solnechnogorsk" target="_blank" class="share-btn">💬 Написать в сообщения</a>
+                </div>
+            </div>
+            <div class="privacy-note">
+                Нажимая на кнопку, вы соглашаетесь на обработку данных. Промокод придёт на почту и в сообщения ВК.
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Скрипт: редирект в ваше сообщество ВК после отправки -->
+<script>
+    (function() {
+        const form = document.querySelector('form');
+        const VK_GROUP_URL = 'https://vk.ru/tort_solnechnogorsk';
+        
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                setTimeout(function() {
+                    window.location.href = VK_GROUP_URL;
+                }, 3000);
+            });
+        }
+        
+        // Настройка кнопки "Рассказать друзьям"
+        const shareBtn = document.getElementById('shareBtn');
+        if (shareBtn) {
+            const currentUrl = encodeURIComponent(window.location.href);
+            const shareText = encodeURIComponent('🍰 Скидка 15% на торты и десерты! Заходите:');
+            shareBtn.href = `https://vk.com/share.php?url=${currentUrl}&title=${shareText}`;
+        }
+    })();
+</script>
+</body>
+</html>
+```
